@@ -1,0 +1,312 @@
+/* =========================================
+   StudyMate AI - Simple Stylesheet (style.css)
+   ========================================= */
+
+/* General Page Styling */
+body {
+  background-color: #f0f4f8;
+  color: #333333;
+  font-family: Arial, sans-serif;
+  max-width: 720px;
+  margin: 20px auto;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Headings and Paragraphs */
+h1 {
+  color: #1a365d;
+  margin-bottom: 5px;
+}
+
+h2 {
+  color: #2b4c7e;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #d0dbe5;
+  padding-bottom: 5px;
+}
+
+h3 {
+  color: #334e68;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+/* Labels and Input Fields */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #b0c4de;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #333333;
+  font-family: inherit;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+input[type="password"],
+input[type="text"] {
+  width: 70%;
+  box-sizing: border-box;
+  padding: 8px 10px;
+  border: 1px solid #b0c4de;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+button {
+  background-color: #e2eafc;
+  color: #1d3557;
+  border: 1px solid #b6ccfe;
+  border-radius: 4px;
+  padding: 8px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 6px;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #c7d8fe;
+}
+
+#generate-btn {
+  font-weight: bold;
+  background-color: #d0e1fd;
+}
+
+#generate-btn:hover {
+  background-color: #b9d2fc;
+}
+
+/* Loading Message */
+#loading-message {
+  font-style: italic;
+  color: #555555;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Study Output Boxes (Summary, Quiz, Flashcards, History) */
+#summary-output,
+#quiz-output,
+#flashcards-output,
+#history-output {
+  background-color: #ffffff;
+  border: 1px solid #d0dbe5;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 12px;
+  min-height: 40px;
+}
+
+/* Quiz Score */
+#quiz-score {
+  font-weight: bold;
+  color: #1d3557;
+  margin-top: 10px;
+}
+
+/* Dynamic Content Elements (Quiz, Flashcards, History) */
+.hidden {
+  display: none;
+}
+
+.quiz-item {
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #d0dbe5;
+}
+
+.quiz-option {
+  margin-bottom: 5px;
+}
+
+.quiz-option label {
+  display: inline;
+  font-weight: normal;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.quiz-explanation {
+  margin-top: 6px;
+  padding: 6px 10px;
+  background-color: #eef4fb;
+  border-left: 3px solid #2b4c7e;
+  font-size: 13px;
+  border-radius: 2px;
+}
+
+.flashcard {
+  border: 1px solid #b0c4de;
+  border-radius: 4px;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.card-label {
+  font-size: 11px;
+  color: #2b4c7e;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 14px;
+  margin: 6px 0;
+  color: #1a365d;
+}
+
+.card-hint {
+  font-size: 12px;
+  color: #666666;
+}
+
+.history-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.history-item {
+  border: 1px solid #d0dbe5;
+  border-radius: 4px;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.history-date {
+  font-size: 12px;
+  color: #666666;
+}
+
+.history-restore-btn {
+  margin: 4px 0 0 0;
+  padding: 4px 10px;
+  font-size: 12px;
+}
+
+.history-empty {
+  color: #666666;
+  font-style: italic;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #1e242b;
+  color: #e0e0e0;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+  color: #ffffff;
+  border-color: #3d4a58;
+}
+
+body.dark-mode textarea,
+body.dark-mode input[type="password"],
+body.dark-mode input[type="text"],
+body.dark-mode #summary-output,
+body.dark-mode #quiz-output,
+body.dark-mode #flashcards-output,
+body.dark-mode #history-output {
+  background-color: #2b333c;
+  color: #f0f0f0;
+  border-color: #485460;
+}
+
+body.dark-mode button {
+  background-color: #3d4a58;
+  color: #ffffff;
+  border-color: #576574;
+}
+
+body.dark-mode button:hover {
+  background-color: #4f5f70;
+}
+
+body.dark-mode .quiz-item {
+  border-color: #3d4a58;
+}
+
+body.dark-mode .quiz-explanation {
+  background-color: #1a2533;
+  border-left-color: #6366f1;
+  color: #e0e0e0;
+}
+
+body.dark-mode .flashcard {
+  background-color: #2b333c;
+  border-color: #485460;
+}
+
+body.dark-mode .card-label {
+  color: #818cf8;
+}
+
+body.dark-mode .card-text {
+  color: #f0f0f0;
+}
+
+body.dark-mode .card-hint {
+  color: #999999;
+}
+
+body.dark-mode .history-item {
+  background-color: #2b333c;
+  border-color: #485460;
+}
+
+body.dark-mode .history-date {
+  color: #aaaaaa;
+}
+
+body.dark-mode .history-empty {
+  color: #aaaaaa;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 600px) {
+  body {
+    padding: 12px;
+    margin: 10px auto;
+  }
+
+  input[type="password"],
+  input[type="text"] {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+}
+
