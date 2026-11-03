@@ -78,3 +78,9 @@ Developed as a Web Technology academic assignment.
 
 ### Screenshot 2
 ![StudyMate AI - Features](screenshot2.png)
+
+## 🚀 Live Demo
+
+**Try StudyMate AI here:** [Open Live Website](## 🚀 Live Demo
+
+**Try StudyMate AI here:** [Open Live Website](https://ai-studymate-companion.netlify.app))
